@@ -1,0 +1,16 @@
+*~
+\#*\#
+
+
+.\#*
+*~
+
+
+# Ignore specific files at any directory level
+**/input
+**/output
+**/tmp
+**/buff
+
+
+**/*.out

@@ -2,7 +2,7 @@
  * @oj    : CSES Problem set
  * @id    : 1094
  * @title : Increasing Array
- * @status: WRONG ANSWER
+ * @status: ACCEPTED
  */
 
 #include <bits/stdc++.h>
@@ -27,6 +27,7 @@ void solve_case()
     for(int indx=1; indx < cntElems; indx++) {
 	if(arr[indx] < arr[indx-1]) {
 	    sum += arr[indx-1] - arr[indx];
+	    arr[indx] = arr[indx-1];
 	}
     }
     cout<< sum << newline;

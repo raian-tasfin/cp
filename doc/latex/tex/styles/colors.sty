@@ -1,0 +1,46 @@
+\ProvidesPackage{colors}[2024/07/08]
+
+
+%%%%%%%%%
+%% doc %%
+%%%%%%%%%
+% We have the following options available
+%  1. linkcolor   - red       - internal links
+%  2. anchorcolor - black     - anchor text
+%  3. citecolor   - green     - bibliographical cirtations
+%  4. filecolor   - cyan      - url to open local files
+%  5. menucolor   - red       - adobe menu items
+%  6. runcolor    - filecolor - run likns
+%  7. urlcolor    - magenta   - linked urls
+%
+% We really only use 1, 3 and 7. Among them 7 is external link and
+% the rest are internal. Almost the entire index consists of
+% "internal link"s. So it must be a dark colour specially pleasant
+% to the eye.
+
+
+
+%%%%%%%%%%%%%%
+%% Packages %%
+%%%%%%%%%%%%%%
+\RequirePackage[table]{xcolor}
+\RequirePackage{hyperref}
+
+
+
+%%%%%%%%%%%%%%%%%%
+%% link-colours %%
+%%%%%%%%%%%%%%%%%%
+\definecolor{linkMaroon}{RGB}{170,0,0}
+\definecolor{linkViolet}{RGB}{128,0,128}
+\definecolor{linkGreen}{RGB}{38,128,32}
+
+\hypersetup{
+  linkcolor=linkMaroon,
+  urlcolor=linkViolet,
+  citecolor=linkGreen,
+}
+
+
+\endinput
+% End of fontsetup.sty

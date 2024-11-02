@@ -1,0 +1,57 @@
+\documentclass{tex/styles/base}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% Custom Packages %%
+%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tex/styles/fontsetup}
+\usepackage{tex/styles/links}
+\usepackage{tex/styles/colors}
+\usepackage{tex/styles/ref}
+\usepackage{tex/styles/mathstyles}
+\usepackage{tex/styles/drawing}
+\usepackage{tex/styles/tocstyle}
+\usepackage{tex/styles/listingstyle}
+
+
+
+
+%%%%%%%%%%%
+%% Title %%
+%%%%%%%%%%%
+\title{%
+  Competitive Programming Notes
+}
+\author{Raian Tasfin}
+\date{Updated: \today}
+
+
+
+
+%%%%%%%%%%%%%%
+%% Document %%
+%%%%%%%%%%%%%%
+\begin{document}
+
+
+
+%%%%%%%%%%%
+%% Cover %%
+%%%%%%%%%%%
+\frontmatter
+\maketitle
+\pagenumbering{gobble}
+\cleardoublepage
+\pagenumbering{roman}
+\subfile{tex/chapters/toc}
+\cleardoublepage
+%% \subfile{tex/chapters/preface}
+
+
+\cleardoublepage
+\mainmatter
+\pagenumbering{arabic}
+\part{Online Judges}
+\subfile{tex/chapters/cses}
+
+
+\end{document}
